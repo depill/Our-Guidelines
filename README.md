@@ -30,5 +30,7 @@
 
 ## We work in teams
 * We are proactive
+* We respect focus
+* We ask for help
 
 ## We cloud
