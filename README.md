@@ -25,6 +25,8 @@
 
 ## We design for scale
 
+## We design for security
+
 ## We promote good coding habits
 * Git flow
 
