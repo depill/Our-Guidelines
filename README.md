@@ -1,25 +1,15 @@
+# Our guidelines
 
+## [Principles](Principles.md)
 
-- Naming conventions
-	- Case sensitive
-	- Environment variables
-	- Repository names
-	- Contract names
-	- Service names (dns lookup compliant, RFC 1035)
-	- npm packages
+## [Naming conventions](NamingConventions.md)
 
-- Project structures
-	- Folder structure
-	- Linters (.eslintrc etc)
-	- .editorconfig
-	- Contracts
+## [Project structures](ProjectStructures.md)
 
-- Logs
-	- How to log
-	- What to log
+## [Logs](Logs.md)
 
-- Git flow
-	- Config
-	- Workflow
+## [Workflow](Workflow.md)
 
-- Principles
+## Meta
+### Services
+### Frontend/backend tagging (tier)
