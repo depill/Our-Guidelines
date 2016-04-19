@@ -9,8 +9,3 @@
 ## [Logs](Logs.md)
 
 ## [Workflow](Workflow.md)
-
-## Meta
-### Correlation-id
-### Services
-### Frontend/backend tagging (tier)
