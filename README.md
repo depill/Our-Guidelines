@@ -4,8 +4,6 @@
 
 ## [Naming conventions](NamingConventions.md)
 
-## [Project structures](ProjectStructures.md)
-
 ## [Logs](Logs.md)
 
 ## [Workflow](Workflow.md)
