@@ -2,6 +2,12 @@
 How we work
 
 
+## Project structures
+We use [`yeoman`](http://yeoman.io/) generators to bootstrap projects.
+
+See [`generator-icelandair`](https://github.com/Icelandair/generator-icelandair) for more info.
+
+
 ## Git flow
 We use [`git flow`](http://danielkummer.github.io/git-flow-cheatsheet/) to an extent.
 
