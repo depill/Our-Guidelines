@@ -2,6 +2,9 @@
 
 Do not log sensitive information such as secrets, credit card info etc
 
+## Correlation-Id
+We use correlation ids ([RFC4122 v4 compliant UUID](https://tools.ietf.org/html/rfc4122)) for request tracking. All services must prepend a correlation id to incoming requests to the `X-Correlation-Id` header before logging. The correlation-id should be used in all log strings (when available).
+
 ## How to log
 We log out to `stdout` which is picked up by `fluentd` and sent to `ElasticSearch`.
 
