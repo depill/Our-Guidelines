@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-icelandair",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Icelandair's base JS ESLint config, originally based on Airbnb",
   "license": "MIT",
   "repository": "Icelandair/Our-Guidelines",
