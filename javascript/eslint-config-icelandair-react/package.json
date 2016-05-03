@@ -1,0 +1,46 @@
+{
+  "name": "eslint-config-icelandair-react",
+  "version": "0.0.0",
+  "description": "Icelandair's React ESLint config, originally based on Airbnb",
+  "license": "MIT",
+  "repository": "Icelandair/Our-Guidelines",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "icelandair",
+    "javascript",
+    "styleguide"
+  ],
+  "author": {
+    "name": "Benedikt D Valdez",
+    "email": "benediktvaldez@gmail.com",
+    "url": "http://bdvs.info"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "tests-only": "babel-tape-runner ./test/**/test-*.js",
+    "pretest": "eslint-find-rules --unused",
+    "test": "npm run --silent lint && npm run --silent tests-only"
+  },
+  "dependencies": {
+    "eslint-config-icelandair": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-tape-runner": "^1.3.1",
+    "eslint": "^2.9.0",
+    "eslint-find-rules": "^1.8.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1",
+    "react": "^15.0.2",
+    "tape": "^4.5.1"
+  },
+  "peerDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-jsx-a11y": "^1.0.4",
+    "eslint-plugin-react": "^5.0.1"
+  }
+}
