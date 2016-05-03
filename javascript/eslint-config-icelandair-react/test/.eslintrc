@@ -1,9 +1,11 @@
-{
-  "rules": {
-    // disabled because I find it tedious to write tests while following this
-    // rule
-    "no-shadow": "off",
-    // tests uses `t` for tape
-    "id-length": ["error", {"min": 2, "properties": "never", "exceptions": ["t"]}]
-  }
-}
+---
+rules:
+  # disable because I find it tedious to write tests while following this rule
+  no-shadow: off
+  # tests uses t for tape
+  id-length:
+    - error
+    - min: 2
+      properties: never
+      exceptions:
+        - "t"
