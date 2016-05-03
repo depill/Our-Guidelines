@@ -1,0 +1,46 @@
+{
+  "name": "eslint-config-icelandair",
+  "version": "0.0.0",
+  "description": "Icelandair's base JS ESLint config, originally based on Airbnb",
+  "license": "MIT",
+  "repository": "Icelandair/Our-Guidelines",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "icelandair",
+    "javascript",
+    "styleguide"
+  ],
+  "author": {
+    "name": "Benedikt D Valdez",
+    "email": "benediktvaldez@gmail.com",
+    "url": "http://bdvs.info"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "tests-only": "ava ./test/test-*.js",
+    "pretest": "eslint-find-rules --unused",
+    "test": "npm run --silent lint && npm run --silent tests-only"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "eslint": "^2.9.0",
+    "eslint-find-rules": "^1.8.0",
+    "eslint-plugin-import": "^1.6.1",
+    "nyc": "^6.4.2",
+    "supervisor": "^0.10.0"
+  },
+  "peerDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-plugin-import": "^1.6.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/test-*.js"
+    ],
+    "failFast": true,
+    "verbose": true
+  }
+}
