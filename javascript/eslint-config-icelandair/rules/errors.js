@@ -3,7 +3,7 @@ module.exports = {
     // disallow assignment in conditional expressions
     'no-cond-assign': ['error', 'always'],
     // disallow use of console
-    'no-console': 'warn',
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     // disallow use of constant expressions in conditions
     'no-constant-condition': 'warn',
     // disallow control characters in regular expressions
@@ -56,4 +56,4 @@ module.exports = {
     // Avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': 'off',
   },
-};
+}

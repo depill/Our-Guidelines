@@ -20,7 +20,7 @@ module.exports = {
     // enforce newline at the end of file, with no multiple empty lines
     'eol-last': 'error',
     // require function expressions to have a name
-    'func-names': 'warn',
+    'func-names': 'off',
     // enforces use of function declarations or expressions
     'func-style': 'off',
     // this option enforces minimum and maximum identifier lengths
@@ -50,7 +50,9 @@ module.exports = {
     'linebreak-style': 'off',
     // specify the maximum length of a line in your program
     // http://eslint.org/docs/rules/max-len
-    'max-len': ['error', 100, 2, {
+    'max-len': ['warn', {
+      'code': 120,
+      'tabWidth': 2,
       'ignoreUrls': true,
       'ignoreComments': false,
     }],
@@ -76,7 +78,7 @@ module.exports = {
     // disallow use of the continue statement
     'no-continue': 'off',
     // disallow comments inline after code
-    'no-inline-comments': 'off',
+    'no-inline-comments': 'error',
     // disallow if as the only statement in an else block
     'no-lonely-if': 'off',
     // disallow mixed spaces and tabs for indentation
@@ -131,7 +133,7 @@ module.exports = {
     // enforce spacing before and after semicolons
     'semi-spacing': ['error', { 'before': false, 'after': true }],
     // require or disallow use of semicolons instead of ASI
-    'semi': ['error', 'always'],
+    'semi': ['error', 'never'],
     // sort variables within the same declaration block
     'sort-vars': 'off',
     // require or disallow space before blocks
@@ -153,4 +155,4 @@ module.exports = {
     // require regex literals to be wrapped in parentheses
     'wrap-regex': 'off',
   },
-};
+}

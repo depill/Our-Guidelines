@@ -107,7 +107,7 @@ module.exports = {
     // disallow reassignment of function parameters
     // disallow parameter object manipulation
     // rule: http://eslint.org/docs/rules/no-param-reassign.html
-    'no-param-reassign': ['error', { 'props': true }],
+    'no-param-reassign': ['warn', { 'props': false }],
     // disallow use of process.env
     'no-process-env': 'off',
     // disallow usage of __proto__ property
@@ -168,4 +168,4 @@ module.exports = {
     // require or disallow Yoda conditions
     'yoda': 'error',
   },
-};
+}

@@ -13,4 +13,4 @@ module.exports = {
     // disallow use of unary operators, ++ and --
     'no-plusplus': 'off',
   },
-};
+}
