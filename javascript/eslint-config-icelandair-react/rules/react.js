@@ -30,7 +30,7 @@ module.exports = {
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
     // Enforce or disallow spaces inside of curly braces in JSX attributes
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
-    'react/jsx-curly-spacing': ['error', 'never', { 'allowMultiline': true }],
+    'react/jsx-curly-spacing': ['warn', 'never', { 'allowMultiline': true }],
     // Enforce event handler naming conventions in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
     'react/jsx-handler-names': ['off', {
@@ -129,7 +129,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'error',
     // Restrict file extensions that may be required
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-extension.md
-    'react/require-extension': ['off', { 'extensions': ['.jsx'] }],
+    'react/require-extension': ['warn', { 'extensions': ['.js'] }],
     // Require render() methods to return something
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
     'react/require-render-return': 'error',
