@@ -27,7 +27,7 @@ module.exports = {
     'no-sync': 'off',
     // ensure imports point to files/modules that can be resolved
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-    'import/no-unresolved': ['error', { 'commonjs': true }],
+    'import/no-unresolved': ['warn', { 'commonjs': true }],
   },
   'settings': {
     'import/resolver': {

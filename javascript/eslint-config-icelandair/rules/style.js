@@ -99,7 +99,7 @@ module.exports = {
     // disallow trailing whitespace at the end of lines
     'no-trailing-spaces': 'error',
     // disallow dangling underscores in identifiers
-    'no-underscore-dangle': ['error', { 'allowAfterThis': false }],
+    'no-underscore-dangle': ['warn', { 'allowAfterThis': true }],
     // disallow the use of Boolean literals in conditional expressions
     // also, prefer `a || b` over `a ? a : b`
     // http://eslint.org/docs/rules/no-unneeded-ternary

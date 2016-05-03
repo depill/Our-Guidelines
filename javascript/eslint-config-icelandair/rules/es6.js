@@ -113,7 +113,7 @@ module.exports = {
     'import/no-extraneous-dependencies': ['off', { 'devDependencies': false }],
     // ensure imports point to files/modules that can be resolved
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-    'import/no-unresolved': ['error', { 'commonjs': true }],
+    'import/no-unresolved': ['warn', { 'commonjs': true }],
     // do not allow a default import name to match a named export
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md
     // TODO: enable
