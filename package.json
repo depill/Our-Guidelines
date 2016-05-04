@@ -20,7 +20,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "tests-only": "ava ./test/test-*.js",
+    "tests-only": "nyc ava ./test/test-*.js",
     "pretest": "eslint-find-rules --unused",
     "test": "npm run --silent lint && npm run --silent tests-only"
   },
