@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-icelandair-react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Icelandair's React ESLint config, originally based on Airbnb",
   "license": "MIT",
   "repository": "Icelandair/Our-Guidelines",
