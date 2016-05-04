@@ -18,6 +18,10 @@ ifndef DOCKER_IMAGE
 	DOCKER_IMAGE := ${DOCKER_REGISTRY_HOST}/${PROJECT_NAME}/${COMPONENT}:${IMAGE_TAG}
 endif
 
+ifndef _NPMRC
+	_NPMRC := ~/.npmrc
+endif
+
 docker:
 	docker build -t ${DOCKER_IMAGE} .
 
@@ -39,7 +43,7 @@ docker-test:
 
 docker-publish:
 	docker run --rm \
-		-v ~/.npmrc:/usr/src/.npmrc
+		-v ${_NPMRC}:/usr/src/.npmrc \
 		-w /usr/src \
 		${DOCKER_IMAGE} \
 		./bin/publish

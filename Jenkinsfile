@@ -19,5 +19,7 @@ node {
     sh 'make docker-test'
 
     stage 'Publish'
-    sh 'make docker-publish'
+    withCredentials([[$class: 'FileBinding', credentialsId: 'npmrc-icelandair-labs', variable: '_NPMRC']]) {
+        sh 'make docker-publish'
+    }
 }
