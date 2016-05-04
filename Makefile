@@ -39,7 +39,7 @@ docker-test:
 		-w /usr/src \
 		${DOCKER_IMAGE} \
 		npm run --silent test
-	sudo chown -R ${USER}:staff .
+	sudo chown -R ${USER}:${USER} .
 
 docker-publish:
 	docker run --rm \
@@ -47,4 +47,4 @@ docker-publish:
 		-w /usr/src \
 		${DOCKER_IMAGE} \
 		./bin/publish
-	sudo chown -R ${USER}:staff .
+	sudo chown -R ${USER}:${USER} .
