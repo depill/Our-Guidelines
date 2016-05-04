@@ -1,7 +1,23 @@
+import java.security.MessageDigest
+
+def generateMD5(String s){
+    MessageDigest.getInstance("MD5").digest(s.bytes).encodeHex().toString()
+}
+
 node {
     checkout scm
-    echo "${pwd()}".toString()
-    def branchName = env.BRANCH_NAME
-    env.IMAGE_TAG = "${branchName.replace('/','-')}-${env.BUILD_NUMBER}".toString()
-    sh 'export'
+
+    stage 'Builder'
+    String hashString = """
+        ${new File("${pwd()}/package.json".toString()).getText("UTF-8")}
+    """
+    env.IMAGE_TAG = generateMD5(hashString.toString())
+    echo "Using IMAGE_TAG: ${env.IMAGE_TAG}".toString()
+    sh 'make docker-pull || make docker docker-push'
+
+    stage 'Test'
+    sh 'make docker-test'
+
+    stage 'Publish'
+    sh 'make docker-publish'
 }
