@@ -34,5 +34,9 @@ Should be defined by an environment variable e.g. `LOG_LEVEL=INFO`
 - Node name *(when available)*
 - Service name
 - Method name
+- RuntimeEnvironment
 - Message *(carefully!)*
   - Can be stack trace or text
+
+## Example for micro.route 
+ - {"correlationId":"843b2dc9-849b-4ff3-83f8-16c7e3c34559; ContentCorrelationId","level":"debug","methodName":"GetSiteTree","msg":"Find site tree","route":"","runtimeEnvironment":"DEV","serviceName":"routes","site":"12345678-1234-1234-1234-123456789","time":"2016-09-21T13:19:28Z"}
