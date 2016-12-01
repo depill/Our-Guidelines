@@ -17,7 +17,7 @@ e.g. `static-content`
 
 
 ## Repository names
-Websites should be name by the domain e.g. `beta.icelandairlabs.com`
+Websites should be named by the domain e.g. `beta.icelandairlabs.com`
 
 Services should be named by the type and service-name, e.g. `micro.static-content`
 
@@ -47,3 +47,8 @@ e.g. `S3_CREDENTIALS_DASHBOARD`
 Private packages scoped under @icelandair
 
 e.g. `@icelandair/descriptive-package-name`
+
+## API url structure
+Version numbers come after the micro service names
+
+e.g. `/api/micro-service-name/v*`
