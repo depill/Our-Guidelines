@@ -51,4 +51,6 @@ e.g. `@icelandair/descriptive-package-name`
 ## API url structure
 Version numbers come after the micro service names
 
-e.g. `/api/micro-service-name/v*`
+e.g. `/api/micro-service-name/v*/`
+
+All endpoints should have trailing slashes
