@@ -10,6 +10,7 @@ We use [`git flow`](http://danielkummer.github.io/git-flow-cheatsheet/) with our
 These branches are created as needed and deleted once they are completed.
 
 * **Feature branches** _(feature/???) e.g feature/support-search_
+* **Bugfix branches** _(bugfix/???) e.g bugfix/langid-specialoffer_
 * **Release branches** _(release/[Date]) e.g release/20180105_
 * **Hotfix branches** _(hotfix/???) e.g hotfix/footer-menu_
 
@@ -22,6 +23,14 @@ _Must merge back into: develop_
 
 1. Merge back to develop when we definitely want to add the new feature, it has been code reviewed and gone through QA. If the feature is unstable/incomplete do not merge in to develop branch.
 2. Delete feature branches when they are finished.
+
+### Bugfix branches
+_Branch off from: develop_
+
+_Must merge back into: develop_
+
+1. Merge back to develop when a bug has been fixed. Needs to go through code review and it depends on the fix if it needs QA.
+2. Delete bugfix branches when they are finished.
 
 ### Release branches
 _Branch off from: develop_
