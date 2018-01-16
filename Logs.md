@@ -28,15 +28,20 @@ Should be defined by an environment variable e.g. `LOG_LEVEL=INFO`
 
 
 ## What to log
-- Timestamp
-- Correlation-Id *(when applicable)*
-- Level
-- Node name *(when available)*
-- Service name
-- Method name
-- RuntimeEnvironment
-- Message *(carefully!)*
+
+These keys should be present within the JSON object.  They are case-sensitive.   
+
+- timestamp
+- correlationid *(when applicable)*
+- level - *Log level*
+- methodname
+- time - Time it took to perform the action  *(when applicable)
+  - Enable for all tasks when the info flag is set 
+- version - The service's version
+- message *(carefully!)*
   - Can be stack trace or text
+
+If there are any datapoints you'd like to be able to filter on, add them in its own key.  For an example if your app is using some cache-keys and you'd like to be able to search for specific keys.
 
 ## Example for micro.route 
  - {"correlationId":"843b2dc9-849b-4ff3-83f8-16c7e3c34559; ContentCorrelationId","level":"debug","methodName":"GetSiteTree","msg":"Find site tree","route":"","runtimeEnvironment":"DEV","serviceName":"routes","site":"12345678-1234-1234-1234-123456789","time":"2016-09-21T13:19:28Z"}
