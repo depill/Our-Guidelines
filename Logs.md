@@ -38,7 +38,7 @@ These keys should be present within the JSON object.  They are case-sensitive.
 - time - Time it took to perform the action  *(when applicable)
   - Enable for all tasks when the info flag is set 
 - version - The service's version
-- languageId - which language id is requesting data  *(when applicable)
+- languageid - what language id (locale) was used when the request was processed (where applicable)
 - message *(carefully!)*
   - Can be stack trace or text
 
