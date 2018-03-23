@@ -32,13 +32,13 @@ Should be defined by an environment variable e.g. `LOG_LEVEL=INFO`
 These keys should be present within the JSON object.  They are case-sensitive.   
 
 - timestamp
-- correlationid *(when applicable)*
+- correlationId *(when applicable)*
 - level - *Log level*
-- methodname
+- methodName
 - time - Time it took to perform the action  *(when applicable)
   - Enable for all tasks when the info flag is set 
 - version - The service's version
-- languageId - wich language is the request.
+- languageId - what language id (locale) was used when the request was processed (where applicable)
 - message *(carefully!)*
   - Can be stack trace or text
 
